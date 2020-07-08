@@ -42,3 +42,8 @@ def power(num1, num2):
 
 def mod(num1, num2):
     """Return the remainder of num1 / num2."""
+
+    while num2 == 0:
+        num2 = float(input("Can't divide by zero. Enter another number to divide by: "))
+
+    return num1 % num2
