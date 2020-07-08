@@ -19,7 +19,10 @@ def multiply(num1, num2):
 
 def divide(num1, num2):
     """Divide the first input by the second and return the result."""
-
+    while num2 == 0:
+        num2 = float(input("Can't divide by zero. Enter another number to divide by: "))
+    
+    return num1 / num2
 
 def square(num1):
     """Return the square of the input."""
